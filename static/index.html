@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <form enctype="multipart/form-data" method="post" action="/upload">
+            <div class="column">
+                <div class="row">
+                    <label for="password">Password:</label>
+                    <input type="text" name="password" id="password" required>
+                </div>
+                <div class="row">
+                    <label for="salt">Salt:</label>
+                    <input type="text" name="salt" id="salt">
+                </div>
+                <div class="row">
+                    <div>
+                        <label for="encrypt">Enctype</label>
+                        <input type="radio" name="action" value="encrypt" id="encrypt" checked>
+                    </div>
+                    <div>
+                        <label for="decrypt">Decrypt</label>
+                        <input type="radio" name="action" value="decrypt" id="decrypt">
+                    </div>
+                </div>
+                <div class="row">
+                    <input type="file" name="file">
+                </div>
+                <div class="row">
+                    <input type="submit" value="Send">
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

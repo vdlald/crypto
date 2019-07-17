@@ -1,6 +1,5 @@
-Crypto
+Crypto Server
 ======
-Some basic crypto utilities.
+### Features
 
-* `spud` is a C program to encrypt and decrypt a file with a passphrase. Uses [libsodium](http://doc.libsodium.org/index.html).
-* `crypt.go` is a Go program to encrypt and decrypt a file with a passphrase. Uses AES-GCM and Argon2.
+- File Encryption and Decryption

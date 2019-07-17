@@ -1,0 +1,44 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+div.container:nth-child(1) {
+    width: 310px;
+    border: 1px solid black;
+    padding: 16px;
+}
+
+form {
+    width: inherit;
+}
+form > .column > .row {
+    justify-content: space-between;
+}
+
+div.column {
+    flex-direction: column;
+}
+
+div.row {
+    flex-direction: row;
+    margin-top: 16px;
+}
+
+div.row:nth-child(1) {
+    margin-top: 0;
+}
+
+input[type="text"] {
+    width: 230px;
+}
+
+div.column,
+div.row,
+div.container {
+    display: flex;
+}
